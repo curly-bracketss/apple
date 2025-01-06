@@ -1,0 +1,655 @@
+.container {
+    padding: 0 3%;
+}
+
+.top-nav {
+    background: #f2f2f2;
+    height: 75px;
+
+    nav {
+        max-width: 1085px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+
+
+    .nav-icons>* {
+        padding: 0 8px;
+    }
+
+    .nav-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -100%;
+        transition: 0.3s;
+
+        a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: #000;
+
+        }
+
+    }
+}
+
+.top-middle-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+    overflow-x: scroll;
+
+    .products {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 0.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #type {
+        font-size: 0.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #bf4800;
+    }
+
+}
+
+input,
+.navbar,
+.top-middle-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.top-bottom {
+    background: #f2f2f2;
+    width: 100%;
+
+    .container {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    p {
+
+        text-align: center;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+}
+
+.titanium-color {
+    background: #000;
+    padding: 40px 0;
+    width: 100%;
+
+    #type {
+        font-size: 0.8em;
+    }
+
+    .titanium-top {
+        text-align: center;
+
+        h6 {
+            margin: 10px;
+            color: #8b887eff;
+            font-family: Arial, Helvetica, sans-serif;
+            font: 400 1.1em Arial;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        .price {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .btn:hover {
+            box-shadow: 3px 5px 7px rgb(172, 185, 236);
+        }
+    }
+
+
+}
+
+.newphoria {
+    padding: 40px 0;
+
+    .newphoria-top {
+        text-align: center;
+
+        h6 {
+            font: 400 1.1em Arial;
+            margin: 10px;
+        }
+
+        .price {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            color: #000;
+            padding: 15px 0;
+
+        }
+
+        .btn:hover {
+            box-shadow: 3px 5px 7px #010e42;
+        }
+    }
+
+}
+
+#type {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #bf4800;
+}
+
+.links {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #0071E3;
+    font-size: 1em;
+    padding: 15px 0;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        margin: 5px 0;
+        background: transparent;
+        transition: all ease-out 0.8s;
+    }
+
+    &:hover::before {
+        width: 100%;
+        left: 0;
+        top: 30px;
+        background: linear-gradient(90deg, yellow, orange, green, blue);
+    }
+}
+
+.love {
+    text-align: center;
+    padding: 40px 0;
+    background: #fbfbfb;
+
+    .love-content {
+        max-width: 1085px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .love-bottom {
+        background: url("../img/lovebg.jpeg")center/contain no-repeat;
+    }
+
+    .lovetop {
+        text-align: center;
+
+        h1 {
+            color: #1E3791;
+            margin: 20px 0;
+        }
+
+        .price {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            color: #000;
+            padding-bottom: 15px;
+        }
+
+        h6 {
+            font: 400 1.1em Arial;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            box-shadow: 3px 5px 7px #010e42;
+        }
+    }
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 10px 0;
+    transition: all 0.3s;
+    background: #0071E3;
+}
+
+.guide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#phones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+
+    h2 {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .phones-properties {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
+
+        .phone-proper {
+            font-family: Arial, Helvetica, sans-serif;
+
+            .prop {
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            .info {
+                text-align: center;
+            }
+
+            h6 {
+                font-weight: 600;
+            }
+
+            h5 {
+                margin: 10px 0;
+            }
+
+            .price {
+                margin: 20px 0 0 0;
+                font-size: 0.8em;
+            }
+
+            .images {
+                height: 300px;
+                text-align: center;
+
+                #image-phone {
+                    height: 75%;
+                    width: 100%;
+                    object-fit: contain;
+                    padding: 20px 0 10px 0;
+                }
+            }
+
+            .prop {
+                img {
+                    height: 40px;
+                    width: 40px;
+                    object-fit: contain;
+                }
+
+                p {
+                    width: 145px;
+                    margin: auto;
+                    font: 0.7em / 2 Arial;
+                }
+
+                .zoom-times {
+                    font: 600 1.4em Arial;
+                }
+            }
+
+            #btn {
+                padding: 0px;
+            }
+
+            .hr {
+                width: 60%;
+                margin: auto;
+            }
+    
+        }
+
+    }
+
+    #links {
+        width: 100%;
+        height: 150px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        a{
+            width: auto;
+        }
+    }
+}
+
+section {
+    padding: 40px 0;
+}
+
+.bg-gray {
+    background: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Arial", Arial, Helvetica, sans-serif;
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    .ways {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        .all-cards {
+            gap:20px;
+            display: flex;
+            justify-content: space-between;
+            p {
+                color: #6e6e73;
+            }
+
+            h5 {
+                padding: 30px;
+                font: 600 1.5em "Arial";
+            }
+
+            #firstcard {
+                .cardimg1 {
+                    height: 30vh;
+                    background: url("../img/savei_phone.jpg") center / contain no-repeat;
+                }
+            }
+
+            article {
+                background: #fff;
+                padding:10px;
+                margin-bottom:15px;
+                text-align: center;
+            }
+
+            .cards {
+                gap:20px;
+                display: flex;
+                #secondcard {
+                    .cardimg2 {
+                        height: 20vh;
+                        background: url("../img/appleemoji.jpeg") center / contain no-repeat;
+                    }
+                }
+
+                #thirdcard {
+                    .cardimg3 {
+                        height: 30vh;
+                        background: url("../img/aplepphone.jpeg") center / contain no-repeat;
+                    }
+                }
+            }
+        }
+
+        #whyapple {
+
+
+            p {
+                color: #000;
+            }
+
+        }
+    }
+
+    .magbtm {
+        background: url("../img/applephones.jpeg") center / contain no-repeat;
+    }
+
+    .featured h2 {
+        font-weight: 600;
+        margin: 20px 0 30px 0;
+    }
+
+    .magic-bottom {
+        background: #fff url("../img/applebg9.jpeg") top / contain no-repeat;
+    }
+
+    .air-top p {
+        font-size: 1.1em;
+        margin: 10px;
+    }
+
+    h5 {
+        font: 600 1.3em Arial;
+        padding: 15px 0;
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .secbtm {
+        background: url("../img/ios17.jpg") center / cover no-repeat;
+    }
+
+    .switchbtm {
+        background: url("../img/applebg.jpeg") bottom/ cover no-repeat;
+    }
+
+    .privacybtm {
+        background: url("../img/privacy.jpg") bottom/ cover no-repeat;
+    }
+
+    .sp {
+        display: flex;
+    }
+
+    .sp .switchbtm,
+    .privacybtm,
+    .tvbtm,
+    .musicbtm,
+    .fitnessbtm,
+    .arcadebtm,
+    .newsbtm,
+    .giftbtm {
+        margin: 10px 0;
+        height: 40vh;
+    }
+
+    .one {
+        background: url("../img/apple_one.jpg") center / contain no-repeat;
+    }
+
+    .one-left {
+        background: url("../img/applebg2.jpeg") center / contain no-repeat;
+    }
+
+    #getmore p {
+        font-size: 1.4em;
+        margin: 20px 0;
+    }
+
+    .intro {
+        background: #fff;
+        padding: 10px;
+    }
+
+    .magsafe,
+    .airtag,
+    .magic,
+    .allone,
+    .sp article,
+    .fitarc,
+    .news {
+        background: #fff;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .bg-black {
+        background: #090a0e;
+        color: #fff;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .tvbtm {
+        background: url("../img/tv+_bg.png") center / cover no-repeat;
+    }
+
+    .musicbtm {
+        background: url("../img/music_bg.jpg") center 45px / cover no-repeat;
+    }
+
+    .fitnessbtm {
+        background: url("../img/fitness_bg.jpg") center / cover no-repeat;
+    }
+
+    .arcadebtm {
+        background: url("../img/arcade_bg.png") center / contain no-repeat;
+    }
+
+    .newsbtm {
+        background: url("../img/news_bg.jpeg") center -100px / cover no-repeat;
+    }
+
+    .giftbtm {
+        background: url("../img/gift_bg.jpg") bottom / cover no-repeat;
+    }
+
+    .appbtm {
+        background: url("../img/research_app.jpg") center / contain no-repeat;
+    }
+}
+
+h2 {
+    font: 500 1.8em / 0.8 Arial;
+    margin: 20px 0;
+}
+
+#about {
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #0000007a;
+    text-align: justify;
+
+    ol {
+        li {
+            font-family: "Arial", Arial, Helvetica, sans-serif;
+            padding: 0;
+            list-style: decimal;
+        }
+    }
+
+    ol {
+        padding: 0 0 30px 30px;
+    }
+
+    p {
+        font-family: "Arial", Arial, Helvetica, sans-serif;
+    }
+}
+ol {
+    padding: 0 0 30px 30px;
+    li {
+      padding: 0;
+      list-style: decimal;
+    }
+  }
+  footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000000bd;
+  }
+  footer p {
+    margin: 20px 0;
+  }
+  .ftop {
+    margin: 10px 0 20px 16px;
+  }
+  .ftop a {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .ftop .fa-apple {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  .footermenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+.footernav{
+    line-height: 1.5em;
+    transition: 0.3s;
+    margin: 0 0 0 20px;
+}
+.open:checked~.footernav{
+    max-height: 250px;
+    padding-bottom: 16px;
+}
+footer p {
+    margin: 20px 0;
+}
+.moreway {
+    color:#0071E3 ;
+    text-decoration: underline;
+  }
+  .footernav {
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: 0.3s;
+    margin: 0 0 0 20px;
+  }
